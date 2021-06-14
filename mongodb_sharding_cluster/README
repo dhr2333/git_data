@@ -1,0 +1,17 @@
+#/rsync/register/personal/sharding_cluster/A_quickly_build.sh
+#一键实现安装部署上线mongodb分片架构
+
+#/rsync/register/personal/sharding_cluster/configserver.sh
+#实现部署上线configserver节点
+
+#/rsync/register/personal/sharding_cluster/error.log
+#A_quickly_build.sh产生的错误日志
+
+#/rsync/register/personal/sharding_cluster/mongos.sh
+#实现部署上线mongos节点
+
+#/rsync/register/personal/sharding_cluster/sharding_cluster.sh
+#实现部署上线sharding_cluster节点
+
+#/rsync/register/personal/sharding_cluster/stop_DB.sh
+#一键停止mongodb分片架构

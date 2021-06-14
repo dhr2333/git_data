@@ -1,0 +1,1882 @@
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38018/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("c2076248-e3e2-4b85-8556-c8edea972850") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "configReplSet",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38018"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38019"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38020"
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614159246, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(0, 0),
+		"electionId" : ObjectId("7fffffff0000000000000001")
+	},
+	"lastCommittedOpTime" : Timestamp(1614159246, 1),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614159246, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38021/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("ea4be9cb-7caa-44c1-8061-f1b3b77bd3d9") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh1",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38021"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38022"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38023",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614159246, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614159246, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38024/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("c7ea7cd0-a261-4e24-8835-4a91ada90a65") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh2",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38024"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38025"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38026",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614159246, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614159246, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38018/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("b7a70556-8f55-4f7b-bf6d-9c470f641760") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "configReplSet",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38018"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38019"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38020"
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614160449, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(0, 0),
+		"electionId" : ObjectId("000000000000000000000000")
+	},
+	"lastCommittedOpTime" : Timestamp(0, 0),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614160449, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38021/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("5f83ba69-f452-4e52-916e-a4308eac209f") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh1",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38021"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38022"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38023",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614160436, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614160436, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38024/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("00edc86a-8e56-4599-bacf-f579c2f8ef30") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh2",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38024"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38025"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38026",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614160446, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614160446, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38018/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("ec4e6b77-e5cd-4786-92b4-1ebff3a2acee") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "configReplSet",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38018"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38019"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38020"
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614160618, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(0, 0),
+		"electionId" : ObjectId("000000000000000000000000")
+	},
+	"lastCommittedOpTime" : Timestamp(0, 0),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614160620, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38021/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("0d274482-236e-4a78-8456-20e0f06e1813") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh1",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38021"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38022"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38023",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614160626, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614160626, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38024/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("29877591-6513-412a-adf5-42a09e51fadd") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh2",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38024"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38025"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38026",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614160631, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614160631, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38018/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("a6fe48ee-2eed-4d2f-8125-4c560f4bdf8a") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "configReplSet",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38018"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38019"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38020"
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614160856, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(0, 0),
+		"electionId" : ObjectId("000000000000000000000000")
+	},
+	"lastCommittedOpTime" : Timestamp(0, 0),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614160858, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38021/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("074782d3-6a52-4150-9b07-93df023a97c6") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh1",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38021"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38022"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38023",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614160864, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614160864, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38024/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("70b6cb38-dde0-45dd-a539-e6637b597261") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh2",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38024"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38025"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38026",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614160868, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614160868, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38018/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("30be9361-3b32-41fb-82c2-85f680986432") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "configReplSet",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38018"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38019"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38020"
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614161499, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(0, 0),
+		"electionId" : ObjectId("000000000000000000000000")
+	},
+	"lastCommittedOpTime" : Timestamp(0, 0),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614161501, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38021/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("6fbbd114-4265-4e09-89f6-f22031f3266e") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh1",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38021"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38022"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38023",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614161502, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614161502, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38024/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("a7afd0f7-8338-4e90-b818-a63aa512de30") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh2",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38024"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38025"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38026",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614161515, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614161515, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38018/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("59b0469a-272c-4e36-8240-9327967dd1c0") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "configReplSet",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38018"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38019"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38020"
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614167167, 2),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(0, 0),
+		"electionId" : ObjectId("000000000000000000000000")
+	},
+	"lastCommittedOpTime" : Timestamp(0, 0),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614167169, 6),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38021/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("e6b8e777-c731-4f0f-9a9e-3bb35aa1f333") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh1",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38021"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38022"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38023",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614167287, 2),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(0, 0),
+		"electionId" : ObjectId("7fffffff000000000000000a")
+	},
+	"lastCommittedOpTime" : Timestamp(1614167287, 2),
+	"$configServerState" : {
+		"opTime" : {
+			"ts" : Timestamp(1614167287, 2),
+			"t" : NumberLong(13)
+		}
+	},
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614167287, 2),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38024/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("2df32a9b-9c88-47f8-9963-533b48d551ba") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh2",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38024"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38025"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38026",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614167203, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(0, 0),
+		"electionId" : ObjectId("000000000000000000000000")
+	},
+	"lastCommittedOpTime" : Timestamp(0, 0),
+	"$configServerState" : {
+		"opTime" : {
+			"ts" : Timestamp(1614167283, 2),
+			"t" : NumberLong(13)
+		}
+	},
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614167287, 2),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38017/admin?compressors=disabled&gssapiServiceName=mongodb
+Error: couldn't connect to server 127.0.0.1:38017, connection attempt failed: SocketException: Error connecting to 127.0.0.1:38017 :: caused by :: Connection refused :
+connect@src/mongo/shell/mongo.js:374:17
+@(connect):2:6
+exception: connect failed
+exiting with code 1
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38018/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("9a3f6cd4-5007-43cd-997f-dc5328c357c2") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "configReplSet",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38018"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38019"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38020"
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614239627, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(0, 0),
+		"electionId" : ObjectId("7fffffff000000000000000e")
+	},
+	"lastCommittedOpTime" : Timestamp(1614239627, 1),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614239627, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38021/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("3d5ba321-7229-456b-be8e-60b4fceb799d") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh1",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38021"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38022"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38023",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614239626, 2),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(0, 0),
+		"electionId" : ObjectId("7fffffff000000000000000b")
+	},
+	"lastCommittedOpTime" : Timestamp(1614239626, 2),
+	"$configServerState" : {
+		"opTime" : {
+			"ts" : Timestamp(1614239626, 1),
+			"t" : NumberLong(14)
+		}
+	},
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614239626, 2),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38024/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("6aa9e717-2477-4a31-b0f0-c334ce42b675") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh2",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38024"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38025"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38026",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614239623, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(0, 0),
+		"electionId" : ObjectId("7fffffff000000000000000c")
+	},
+	"lastCommittedOpTime" : Timestamp(1614239623, 1),
+	"$configServerState" : {
+		"opTime" : {
+			"ts" : Timestamp(1614239622, 1),
+			"t" : NumberLong(14)
+		}
+	},
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614239623, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38017/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("de8761ed-5db1-48c5-810f-661c0f3985c3") }
+MongoDB server version: 4.4.2
+{
+	"shards" : [
+		{
+			"_id" : "shard1",
+			"host" : "sh1/127.0.0.1:38021,127.0.0.1:38022",
+			"state" : 1
+		},
+		{
+			"_id" : "shard2",
+			"host" : "sh2/127.0.0.1:38024,127.0.0.1:38025",
+			"state" : 1
+		}
+	],
+	"ok" : 1,
+	"operationTime" : Timestamp(1614239629, 1),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614239629, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38018/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("8220dbb2-d463-4906-97b5-b365d23cc9c3") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "configReplSet",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38018"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38019"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38020"
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614239738, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(0, 0),
+		"electionId" : ObjectId("7fffffff000000000000000e")
+	},
+	"lastCommittedOpTime" : Timestamp(1614239738, 1),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614239738, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38021/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("3ef09f5c-2d3a-4c33-89d8-e90f0501f0ab") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh1",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38021"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38022"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38023",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614239736, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(0, 0),
+		"electionId" : ObjectId("7fffffff000000000000000b")
+	},
+	"lastCommittedOpTime" : Timestamp(1614239736, 1),
+	"$configServerState" : {
+		"opTime" : {
+			"ts" : Timestamp(1614239732, 1),
+			"t" : NumberLong(14)
+		}
+	},
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614239736, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38024/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("cf5f15a1-757a-4ae0-948d-94076c150b3e") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh2",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38024"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38025"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38026",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1614239733, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(0, 0),
+		"electionId" : ObjectId("7fffffff000000000000000c")
+	},
+	"lastCommittedOpTime" : Timestamp(1614239733, 1),
+	"$configServerState" : {
+		"opTime" : {
+			"ts" : Timestamp(1614239732, 1),
+			"t" : NumberLong(14)
+		}
+	},
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614239733, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38017/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("b6a31ab6-8399-4a44-a3ec-62c8e46b104a") }
+MongoDB server version: 4.4.2
+{
+	"shards" : [
+		{
+			"_id" : "shard1",
+			"host" : "sh1/127.0.0.1:38021,127.0.0.1:38022",
+			"state" : 1
+		},
+		{
+			"_id" : "shard2",
+			"host" : "sh2/127.0.0.1:38024,127.0.0.1:38025",
+			"state" : 1
+		}
+	],
+	"ok" : 1,
+	"operationTime" : Timestamp(1614239739, 1),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1614239739, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+++ which mongod
++ mongod=/mongodb/bin/mongod
+++ which mongo
++ mongo=/mongodb/bin/mongo
++ /usr/bin/mkdir -p /mongodb/38021/conf /mongodb/38021/log /mongodb/38021/data
++ /usr/bin/mkdir -p /mongodb/38022/conf /mongodb/38022/log /mongodb/38022/data
++ /usr/bin/mkdir -p /mongodb/38023/conf /mongodb/38023/log /mongodb/38023/data
++ /usr/bin/mkdir -p /mongodb/38024/conf /mongodb/38024/log /mongodb/38024/data
++ /usr/bin/mkdir -p /mongodb/38025/conf /mongodb/38025/log /mongodb/38025/data
++ /usr/bin/mkdir -p /mongodb/38026/conf /mongodb/38026/log /mongodb/38026/data
++ /usr/bin/cat
++ /bin/cp /mongodb/38021/conf/mongodb.conf /mongodb/38022/conf/
++ /bin/cp /mongodb/38021/conf/mongodb.conf /mongodb/38023/conf/
++ /usr/bin/sed s#38021#38022#g /mongodb/38022/conf/mongodb.conf -i
++ /usr/bin/sed s#38021#38023#g /mongodb/38023/conf/mongodb.conf -i
++ cat
++ /bin/cp /mongodb/38024/conf/mongodb.conf /mongodb/38025/conf/
++ /bin/cp /mongodb/38024/conf/mongodb.conf /mongodb/38026/conf/
++ /usr/bin/sed s#38024#38025#g /mongodb/38025/conf/mongodb.conf -i
++ /usr/bin/sed s#38024#38026#g /mongodb/38026/conf/mongodb.conf -i
++ /mongodb/bin/mongod -f /mongodb/38021/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38022/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38023/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38024/conf/mongodb.conf
+++ which mongod
++ mongod=/mongodb/bin/mongod
+++ which mongo
++ mongo=/mongodb/bin/mongo
++ /usr/bin/mkdir -p /mongodb/38021/conf /mongodb/38021/log /mongodb/38021/data
++ /usr/bin/mkdir -p /mongodb/38022/conf /mongodb/38022/log /mongodb/38022/data
++ /usr/bin/mkdir -p /mongodb/38023/conf /mongodb/38023/log /mongodb/38023/data
++ /usr/bin/mkdir -p /mongodb/38024/conf /mongodb/38024/log /mongodb/38024/data
++ /usr/bin/mkdir -p /mongodb/38025/conf /mongodb/38025/log /mongodb/38025/data
++ /usr/bin/mkdir -p /mongodb/38026/conf /mongodb/38026/log /mongodb/38026/data
++ /usr/bin/cat
++ /bin/cp /mongodb/38021/conf/mongodb.conf /mongodb/38022/conf/
++ /bin/cp /mongodb/38021/conf/mongodb.conf /mongodb/38023/conf/
++ /usr/bin/sed s#38021#38022#g /mongodb/38022/conf/mongodb.conf -i
++ /usr/bin/sed s#38021#38023#g /mongodb/38023/conf/mongodb.conf -i
++ cat
++ /bin/cp /mongodb/38024/conf/mongodb.conf /mongodb/38025/conf/
++ /bin/cp /mongodb/38024/conf/mongodb.conf /mongodb/38026/conf/
++ /usr/bin/sed s#38024#38025#g /mongodb/38025/conf/mongodb.conf -i
++ /usr/bin/sed s#38024#38026#g /mongodb/38026/conf/mongodb.conf -i
++ /mongodb/bin/mongod -f /mongodb/38021/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38022/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38023/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38024/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38025/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38026/conf/mongodb.conf
++ /mongodb/bin/mongo --port 38021 admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38021/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("23fe759c-208d-4f07-80ee-a27e255af4ff") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh1",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38021"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38022"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38023",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"ok" : 1,
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1615626001, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	},
+	"operationTime" : Timestamp(1615626001, 1)
+}
++ /mongodb/bin/mongo --port 38024 admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38024/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("b2c68ddf-5dbe-4ce3-8c6d-08e1d116e2de") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh2",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38024"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38025"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38026",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"ok" : 1,
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1615626001, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	},
+	"operationTime" : Timestamp(1615626001, 1)
+}
+++ which mongod
++ mongod=/mongodb/bin/mongod
+++ which mongo
++ mongo=/mongodb/bin/mongo
++ /usr/bin/mkdir -p /mongodb/38018/conf /mongodb/38018/log /mongodb/38018/data
++ /usr/bin/mkdir -p /mongodb/38019/conf /mongodb/38019/log /mongodb/38019/data
++ /usr/bin/mkdir -p /mongodb/38020/conf /mongodb/38020/log /mongodb/38020/data
++ /usr/bin/cat
++ /usr/bin/cp /mongodb/38018/conf/mongodb.conf /mongodb/38019/conf/
++ /usr/bin/cp /mongodb/38018/conf/mongodb.conf /mongodb/38020/conf/
++ /usr/bin/sed s#38018#38019#g /mongodb/38019/conf/mongodb.conf -i
++ /usr/bin/sed s#38018#38020#g /mongodb/38020/conf/mongodb.conf -i
++ /mongodb/bin/mongod -f /mongodb/38018/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38019/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38020/conf/mongodb.conf
++ /mongodb/bin/mongo --port 38018 admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38018/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("4654704a-b62a-489a-a77b-c530b495c222") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "configReplSet",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38018"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38019"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38020"
+		}
+	]
+}
+{
+	"ok" : 1,
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(1615626004, 1),
+		"electionId" : ObjectId("000000000000000000000000")
+	},
+	"lastCommittedOpTime" : Timestamp(0, 0),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1615626004, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	},
+	"operationTime" : Timestamp(1615626004, 1)
+}
+++ which mongod
++ mongod=/mongodb/bin/mongod
+++ which mongo
++ mongo=/mongodb/bin/mongo
+++ which mongos
++ mongos=/mongodb/bin/mongos
++ /usr/bin/mkdir -p /mongodb/38017/conf /mongodb/38017/log
++ /usr/bin/cat
++ /mongodb/bin/mongos -f /mongodb/38017/conf/mongos.conf
+++ which mongod
++ mongod=/mongodb/bin/mongod
+++ which mongo
++ mongo=/mongodb/bin/mongo
++ /usr/bin/mkdir -p /mongodb/38021/conf /mongodb/38021/log /mongodb/38021/data
++ /usr/bin/mkdir -p /mongodb/38022/conf /mongodb/38022/log /mongodb/38022/data
++ /usr/bin/mkdir -p /mongodb/38023/conf /mongodb/38023/log /mongodb/38023/data
++ /usr/bin/mkdir -p /mongodb/38024/conf /mongodb/38024/log /mongodb/38024/data
++ /usr/bin/mkdir -p /mongodb/38025/conf /mongodb/38025/log /mongodb/38025/data
++ /usr/bin/mkdir -p /mongodb/38026/conf /mongodb/38026/log /mongodb/38026/data
++ /usr/bin/cat
++ /bin/cp /mongodb/38021/conf/mongodb.conf /mongodb/38022/conf/
++ /bin/cp /mongodb/38021/conf/mongodb.conf /mongodb/38023/conf/
++ /usr/bin/sed s#38021#38022#g /mongodb/38022/conf/mongodb.conf -i
++ /usr/bin/sed s#38021#38023#g /mongodb/38023/conf/mongodb.conf -i
++ cat
++ /bin/cp /mongodb/38024/conf/mongodb.conf /mongodb/38025/conf/
++ /bin/cp /mongodb/38024/conf/mongodb.conf /mongodb/38026/conf/
++ /usr/bin/sed s#38024#38025#g /mongodb/38025/conf/mongodb.conf -i
++ /usr/bin/sed s#38024#38026#g /mongodb/38026/conf/mongodb.conf -i
++ /mongodb/bin/mongod -f /mongodb/38021/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38022/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38023/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38024/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38025/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38026/conf/mongodb.conf
++ /mongodb/bin/mongo --port 38021 admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38021/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("e5364d52-5ce2-4f41-be6e-8a3c84a733d2") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh1",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38021"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38022"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38023",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1615626012, 4),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1615626012, 4),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
++ /mongodb/bin/mongo --port 38024 admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38024/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("cf07213a-a118-42d7-9e48-e35338645ccf") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh2",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38024"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38025"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38026",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1615626012, 4),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1615626012, 4),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+++ which mongod
++ mongod=/mongodb/bin/mongod
+++ which mongo
++ mongo=/mongodb/bin/mongo
++ /usr/bin/mkdir -p /mongodb/38018/conf /mongodb/38018/log /mongodb/38018/data
++ /usr/bin/mkdir -p /mongodb/38019/conf /mongodb/38019/log /mongodb/38019/data
++ /usr/bin/mkdir -p /mongodb/38020/conf /mongodb/38020/log /mongodb/38020/data
++ /usr/bin/cat
++ /usr/bin/cp /mongodb/38018/conf/mongodb.conf /mongodb/38019/conf/
++ /usr/bin/cp /mongodb/38018/conf/mongodb.conf /mongodb/38020/conf/
++ /usr/bin/sed s#38018#38019#g /mongodb/38019/conf/mongodb.conf -i
++ /usr/bin/sed s#38018#38020#g /mongodb/38020/conf/mongodb.conf -i
++ /mongodb/bin/mongod -f /mongodb/38018/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38019/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38020/conf/mongodb.conf
++ /mongodb/bin/mongo --port 38018 admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38018/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("a72d53bc-4374-40c8-bcaf-ef80eb117a59") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "configReplSet",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "127.0.0.1:38018"
+		},
+		{
+			"_id" : 1,
+			"host" : "127.0.0.1:38019"
+		},
+		{
+			"_id" : 2,
+			"host" : "127.0.0.1:38020"
+		}
+	]
+}
+{
+	"operationTime" : Timestamp(1615626020, 1),
+	"ok" : 0,
+	"errmsg" : "already initialized",
+	"code" : 23,
+	"codeName" : "AlreadyInitialized",
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(0, 0),
+		"electionId" : ObjectId("7fffffff0000000000000001")
+	},
+	"lastCommittedOpTime" : Timestamp(1615626020, 1),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1615626020, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+++ which mongod
++ mongod=/mongodb/bin/mongod
+++ which mongo
++ mongo=/mongodb/bin/mongo
+++ which mongos
++ mongos=/mongodb/bin/mongos
++ /usr/bin/mkdir -p /mongodb/38017/conf /mongodb/38017/log
++ /usr/bin/cat
++ /mongodb/bin/mongos -f /mongodb/38017/conf/mongos.conf
++ /mongodb/bin/mongo 127.0.0.1:38017/admin
++ /mongodb/bin/mongo 127.0.0.1:38017/admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38017/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("7cf27721-cc33-41ee-a02f-15c87ea91a0a") }
+MongoDB server version: 4.4.2
+{
+	"shards" : [
+		{
+			"_id" : "shard1",
+			"host" : "sh1/127.0.0.1:38021,127.0.0.1:38022",
+			"state" : 1
+		},
+		{
+			"_id" : "shard2",
+			"host" : "sh2/127.0.0.1:38024,127.0.0.1:38025",
+			"state" : 1
+		}
+	],
+	"ok" : 1,
+	"operationTime" : Timestamp(1615626030, 2),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1615626030, 2),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+++ which mongod
++ mongod=/mongodb/bin/mongod
+++ which mongo
++ mongo=/mongodb/bin/mongo
++ /usr/bin/mkdir -p /mongodb/38021/conf /mongodb/38021/log /mongodb/38021/data
++ /usr/bin/mkdir -p /mongodb/38022/conf /mongodb/38022/log /mongodb/38022/data
++ /usr/bin/mkdir -p /mongodb/38023/conf /mongodb/38023/log /mongodb/38023/data
++ /usr/bin/mkdir -p /mongodb/38024/conf /mongodb/38024/log /mongodb/38024/data
++ /usr/bin/mkdir -p /mongodb/38025/conf /mongodb/38025/log /mongodb/38025/data
++ /usr/bin/mkdir -p /mongodb/38026/conf /mongodb/38026/log /mongodb/38026/data
++ /usr/bin/cat
++ /bin/cp /mongodb/38021/conf/mongodb.conf /mongodb/38022/conf/
++ /bin/cp /mongodb/38021/conf/mongodb.conf /mongodb/38023/conf/
++ /usr/bin/sed s#38021#38022#g /mongodb/38022/conf/mongodb.conf -i
++ /usr/bin/sed s#38021#38023#g /mongodb/38023/conf/mongodb.conf -i
++ cat
++ /bin/cp /mongodb/38024/conf/mongodb.conf /mongodb/38025/conf/
++ /bin/cp /mongodb/38024/conf/mongodb.conf /mongodb/38026/conf/
++ /usr/bin/sed s#38024#38025#g /mongodb/38025/conf/mongodb.conf -i
++ /usr/bin/sed s#38024#38026#g /mongodb/38026/conf/mongodb.conf -i
++ /mongodb/bin/mongod -f /mongodb/38021/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38022/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38023/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38024/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38025/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38026/conf/mongodb.conf
++ /mongodb/bin/mongo --port 38021 admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38021/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("b505892c-632e-457b-9748-47d102e98169") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh1",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "10.0.0.51:38021"
+		},
+		{
+			"_id" : 1,
+			"host" : "10.0.0.51:38022"
+		},
+		{
+			"_id" : 2,
+			"host" : "10.0.0.51:38023",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"ok" : 1,
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1615631638, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	},
+	"operationTime" : Timestamp(1615631638, 1)
+}
++ /mongodb/bin/mongo --port 38024 admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38024/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("cc126706-3d92-4cbb-9d00-5722a690c16e") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh2",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "10.0.0.51:38024"
+		},
+		{
+			"_id" : 1,
+			"host" : "10.0.0.51:38025"
+		},
+		{
+			"_id" : 2,
+			"host" : "10.0.0.51:38026",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"ok" : 1,
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1615631639, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	},
+	"operationTime" : Timestamp(1615631639, 1)
+}
+++ which mongod
++ mongod=/mongodb/bin/mongod
+++ which mongo
++ mongo=/mongodb/bin/mongo
++ /usr/bin/mkdir -p /mongodb/38018/conf /mongodb/38018/log /mongodb/38018/data
++ /usr/bin/mkdir -p /mongodb/38019/conf /mongodb/38019/log /mongodb/38019/data
++ /usr/bin/mkdir -p /mongodb/38020/conf /mongodb/38020/log /mongodb/38020/data
++ /usr/bin/cat
++ /usr/bin/cp /mongodb/38018/conf/mongodb.conf /mongodb/38019/conf/
++ /usr/bin/cp /mongodb/38018/conf/mongodb.conf /mongodb/38020/conf/
++ /usr/bin/sed s#38018#38019#g /mongodb/38019/conf/mongodb.conf -i
++ /usr/bin/sed s#38018#38020#g /mongodb/38020/conf/mongodb.conf -i
++ /mongodb/bin/mongod -f /mongodb/38018/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38019/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38020/conf/mongodb.conf
++ /mongodb/bin/mongo --port 38018 admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38018/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("de5f0a60-989d-4019-b302-7e55ba3f7b38") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "configReplSet",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "10.0.0.51:38018"
+		},
+		{
+			"_id" : 1,
+			"host" : "10.0.0.51:38019"
+		},
+		{
+			"_id" : 2,
+			"host" : "10.0.0.51:38020"
+		}
+	]
+}
+{
+	"ok" : 1,
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(1615631641, 1),
+		"electionId" : ObjectId("000000000000000000000000")
+	},
+	"lastCommittedOpTime" : Timestamp(0, 0),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1615631641, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	},
+	"operationTime" : Timestamp(1615631641, 1)
+}
+++ which mongod
++ mongod=/mongodb/bin/mongod
+++ which mongo
++ mongo=/mongodb/bin/mongo
+++ which mongos
++ mongos=/mongodb/bin/mongos
++ /usr/bin/mkdir -p /mongodb/38017/conf /mongodb/38017/log
++ /usr/bin/cat
++ /mongodb/bin/mongos -f /mongodb/38017/conf/mongos.conf
+++ which mongod
++ mongod=/mongodb/bin/mongod
+++ which mongo
++ mongo=/mongodb/bin/mongo
++ /usr/bin/mkdir -p /mongodb/38021/conf /mongodb/38021/log /mongodb/38021/data
++ /usr/bin/mkdir -p /mongodb/38022/conf /mongodb/38022/log /mongodb/38022/data
++ /usr/bin/mkdir -p /mongodb/38023/conf /mongodb/38023/log /mongodb/38023/data
++ /usr/bin/mkdir -p /mongodb/38024/conf /mongodb/38024/log /mongodb/38024/data
++ /usr/bin/mkdir -p /mongodb/38025/conf /mongodb/38025/log /mongodb/38025/data
++ /usr/bin/mkdir -p /mongodb/38026/conf /mongodb/38026/log /mongodb/38026/data
++ /usr/bin/cat
++ /bin/cp /mongodb/38021/conf/mongodb.conf /mongodb/38022/conf/
++ /bin/cp /mongodb/38021/conf/mongodb.conf /mongodb/38023/conf/
++ /usr/bin/sed s#38021#38022#g /mongodb/38022/conf/mongodb.conf -i
++ /usr/bin/sed s#38021#38023#g /mongodb/38023/conf/mongodb.conf -i
++ cat
++ /bin/cp /mongodb/38024/conf/mongodb.conf /mongodb/38025/conf/
++ /bin/cp /mongodb/38024/conf/mongodb.conf /mongodb/38026/conf/
++ /usr/bin/sed s#38024#38025#g /mongodb/38025/conf/mongodb.conf -i
++ /usr/bin/sed s#38024#38026#g /mongodb/38026/conf/mongodb.conf -i
++ /mongodb/bin/mongod -f /mongodb/38021/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38022/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38023/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38024/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38025/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38026/conf/mongodb.conf
++ /mongodb/bin/mongo --port 38021 admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38021/admin?compressors=disabled&gssapiServiceName=mongodb
+Error: network error while attempting to run command 'isMaster' on host '127.0.0.1:38021'  :
+connect@src/mongo/shell/mongo.js:374:17
+@(connect):2:6
+exception: connect failed
+exiting with code 1
++ /mongodb/bin/mongo --port 38024 admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38024/admin?compressors=disabled&gssapiServiceName=mongodb
+Error: couldn't connect to server 127.0.0.1:38024, connection attempt failed: SocketException: Error connecting to 127.0.0.1:38024 :: caused by :: Connection refused :
+connect@src/mongo/shell/mongo.js:374:17
+@(connect):2:6
+exception: connect failed
+exiting with code 1
+++ which mongod
++ mongod=/mongodb/bin/mongod
+++ which mongo
++ mongo=/mongodb/bin/mongo
++ /usr/bin/mkdir -p /mongodb/38018/conf /mongodb/38018/log /mongodb/38018/data
++ /usr/bin/mkdir -p /mongodb/38019/conf /mongodb/38019/log /mongodb/38019/data
++ /usr/bin/mkdir -p /mongodb/38020/conf /mongodb/38020/log /mongodb/38020/data
++ /usr/bin/cat
++ /usr/bin/cp /mongodb/38018/conf/mongodb.conf /mongodb/38019/conf/
++ /usr/bin/cp /mongodb/38018/conf/mongodb.conf /mongodb/38020/conf/
++ /usr/bin/sed s#38018#38019#g /mongodb/38019/conf/mongodb.conf -i
++ /usr/bin/sed s#38018#38020#g /mongodb/38020/conf/mongodb.conf -i
++ /mongodb/bin/mongod -f /mongodb/38018/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38019/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38020/conf/mongodb.conf
++ /mongodb/bin/mongo --port 38018 admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38018/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("d9e30e80-1383-46fe-b053-773266ba0702") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "configReplSet",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "10.0.0.51:38018"
+		},
+		{
+			"_id" : 1,
+			"host" : "10.0.0.51:38019"
+		},
+		{
+			"_id" : 2,
+			"host" : "10.0.0.51:38020"
+		}
+	]
+}
+{
+	"ok" : 1,
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(1615631652, 1),
+		"electionId" : ObjectId("000000000000000000000000")
+	},
+	"lastCommittedOpTime" : Timestamp(0, 0),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1615631652, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	},
+	"operationTime" : Timestamp(1615631652, 1)
+}
+++ which mongod
++ mongod=/mongodb/bin/mongod
+++ which mongo
++ mongo=/mongodb/bin/mongo
+++ which mongos
++ mongos=/mongodb/bin/mongos
++ /usr/bin/mkdir -p /mongodb/38017/conf /mongodb/38017/log
++ /usr/bin/cat
++ /mongodb/bin/mongos -f /mongodb/38017/conf/mongos.conf
++ /mongodb/bin/mongo 10.0.0.51:38017/admin
++ /mongodb/bin/mongo 10.0.0.51:38017/admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://10.0.0.51:38017/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("f13b87d3-ce8e-47cd-88ca-1c772b7ee4f8") }
+MongoDB server version: 4.4.2
+{
+	"shards" : [ ],
+	"ok" : 1,
+	"operationTime" : Timestamp(1615631681, 1),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1615631681, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+++ which mongod
++ mongod=/mongodb/bin/mongod
+++ which mongo
++ mongo=/mongodb/bin/mongo
++ /usr/bin/mkdir -p /mongodb/38021/conf /mongodb/38021/log /mongodb/38021/data
++ /usr/bin/mkdir -p /mongodb/38022/conf /mongodb/38022/log /mongodb/38022/data
++ /usr/bin/mkdir -p /mongodb/38023/conf /mongodb/38023/log /mongodb/38023/data
++ /usr/bin/mkdir -p /mongodb/38024/conf /mongodb/38024/log /mongodb/38024/data
++ /usr/bin/mkdir -p /mongodb/38025/conf /mongodb/38025/log /mongodb/38025/data
++ /usr/bin/mkdir -p /mongodb/38026/conf /mongodb/38026/log /mongodb/38026/data
++ /usr/bin/cat
++ /bin/cp /mongodb/38021/conf/mongodb.conf /mongodb/38022/conf/
++ /bin/cp /mongodb/38021/conf/mongodb.conf /mongodb/38023/conf/
++ /usr/bin/sed s#38021#38022#g /mongodb/38022/conf/mongodb.conf -i
++ /usr/bin/sed s#38021#38023#g /mongodb/38023/conf/mongodb.conf -i
++ cat
++ /bin/cp /mongodb/38024/conf/mongodb.conf /mongodb/38025/conf/
++ /bin/cp /mongodb/38024/conf/mongodb.conf /mongodb/38026/conf/
++ /usr/bin/sed s#38024#38025#g /mongodb/38025/conf/mongodb.conf -i
++ /usr/bin/sed s#38024#38026#g /mongodb/38026/conf/mongodb.conf -i
++ /mongodb/bin/mongod -f /mongodb/38021/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38022/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38023/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38024/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38025/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38026/conf/mongodb.conf
++ /mongodb/bin/mongo --port 38021 admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38021/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("309069db-63c7-47c3-a261-cdf6b863aa6c") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh1",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "10.0.0.51:38021"
+		},
+		{
+			"_id" : 1,
+			"host" : "10.0.0.51:38022"
+		},
+		{
+			"_id" : 2,
+			"host" : "10.0.0.51:38023",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"ok" : 1,
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1615632937, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	},
+	"operationTime" : Timestamp(1615632937, 1)
+}
++ /mongodb/bin/mongo --port 38024 admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38024/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("1ef2f96c-9c76-4023-9fb0-d8b71a96ab47") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "sh2",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "10.0.0.51:38024"
+		},
+		{
+			"_id" : 1,
+			"host" : "10.0.0.51:38025"
+		},
+		{
+			"_id" : 2,
+			"host" : "10.0.0.51:38026",
+			"arbiterOnly" : true
+		}
+	]
+}
+{
+	"ok" : 1,
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1615632937, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	},
+	"operationTime" : Timestamp(1615632937, 1)
+}
+++ which mongod
++ mongod=/mongodb/bin/mongod
+++ which mongo
++ mongo=/mongodb/bin/mongo
++ /usr/bin/mkdir -p /mongodb/38018/conf /mongodb/38018/log /mongodb/38018/data
++ /usr/bin/mkdir -p /mongodb/38019/conf /mongodb/38019/log /mongodb/38019/data
++ /usr/bin/mkdir -p /mongodb/38020/conf /mongodb/38020/log /mongodb/38020/data
++ /usr/bin/cat
++ /usr/bin/cp /mongodb/38018/conf/mongodb.conf /mongodb/38019/conf/
++ /usr/bin/cp /mongodb/38018/conf/mongodb.conf /mongodb/38020/conf/
++ /usr/bin/sed s#38018#38019#g /mongodb/38019/conf/mongodb.conf -i
++ /usr/bin/sed s#38018#38020#g /mongodb/38020/conf/mongodb.conf -i
++ /mongodb/bin/mongod -f /mongodb/38018/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38019/conf/mongodb.conf
++ /mongodb/bin/mongod -f /mongodb/38020/conf/mongodb.conf
++ /mongodb/bin/mongo --port 38018 admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://127.0.0.1:38018/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("3eae2f87-18b1-438a-9783-362188c08fc7") }
+MongoDB server version: 4.4.2
+{
+	"_id" : "configReplSet",
+	"members" : [
+		{
+			"_id" : 0,
+			"host" : "10.0.0.51:38018"
+		},
+		{
+			"_id" : 1,
+			"host" : "10.0.0.51:38019"
+		},
+		{
+			"_id" : 2,
+			"host" : "10.0.0.51:38020"
+		}
+	]
+}
+{
+	"ok" : 1,
+	"$gleStats" : {
+		"lastOpTime" : Timestamp(1615632939, 1),
+		"electionId" : ObjectId("000000000000000000000000")
+	},
+	"lastCommittedOpTime" : Timestamp(0, 0),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1615632939, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	},
+	"operationTime" : Timestamp(1615632939, 1)
+}
+++ which mongod
++ mongod=/mongodb/bin/mongod
+++ which mongo
++ mongo=/mongodb/bin/mongo
+++ which mongos
++ mongos=/mongodb/bin/mongos
++ /usr/bin/mkdir -p /mongodb/38017/conf /mongodb/38017/log
++ /usr/bin/cat
++ /mongodb/bin/mongos -f /mongodb/38017/conf/mongos.conf
++ /mongodb/bin/mongo 10.0.0.51:38017/admin
++ /mongodb/bin/mongo 10.0.0.51:38017/admin
+MongoDB shell version v4.4.2
+connecting to: mongodb://10.0.0.51:38017/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("fe6c5f64-8e70-4b1f-a4e5-8a90a53f9f84") }
+MongoDB server version: 4.4.2
+{
+	"shards" : [
+		{
+			"_id" : "shard1",
+			"host" : "sh1/10.0.0.51:38021,10.0.0.51:38022",
+			"state" : 1
+		},
+		{
+			"_id" : "shard2",
+			"host" : "sh2/10.0.0.51:38024,10.0.0.51:38025",
+			"state" : 1
+		}
+	],
+	"ok" : 1,
+	"operationTime" : Timestamp(1615632958, 1),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1615632958, 1),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+--- Sharding Status --- 
+  sharding version: {
+  	"_id" : 1,
+  	"minCompatibleVersion" : 5,
+  	"currentVersion" : 6,
+  	"clusterId" : ObjectId("604c9a36eaeaee5f0b462f37")
+  }
+  shards:
+        {  "_id" : "shard1",  "host" : "sh1/10.0.0.51:38021,10.0.0.51:38022",  "state" : 1 }
+        {  "_id" : "shard2",  "host" : "sh2/10.0.0.51:38024,10.0.0.51:38025",  "state" : 1 }
+  active mongoses:
+        "4.4.2" : 1
+  autosplit:
+        Currently enabled: yes
+  balancer:
+        Currently enabled:  yes
+        Currently running:  no
+        Failed balancer rounds in last 5 attempts:  0
+        Migration Results for the last 24 hours: 
+                No recent migrations
+  databases:
+        {  "_id" : "config",  "primary" : "config",  "partitioned" : true }

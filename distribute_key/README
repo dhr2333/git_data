@@ -1,0 +1,23 @@
+作用：
+    通过在ip_port_pass.txt文件中添加主机，实现分发密钥或ansible添加主机清单
+#/rsync/register/scripts/distribute_key/README
+#/rsync/register/scripts/distribute_key/distribute_key.sh
+分发密钥脚本，与ip_port_pass.txt文件配合使用(先完成ip_port_pass.txt文件的编写)
+
+#/rsync/register/scripts/distribute_key/ansible.sh
+该脚本的使用前提为：
+  1.保证宿主机能使用ansbile命令(yum install -y ansible)
+  1.保证宿主机已经生成密钥公钥对(ssh-keygen -t rsa交互空格即可)
+  2.保证宿主机有sshpass命令(yum install -y sshpass)
+  3.保证将文件存放在root目录下且递归保存(scp -rp test@101.132.172.127:/rsync/register/scripts/distribute_key/ /root/)密码为:611425
+  4.保证文件权限为可读可执行(chmod -R 755 /root/distribute_key)
+该脚本的使用方法为(已获取到该脚本且满足使用前提下):
+  1.修改/root/distribute_key/ip_port_pass.txt文件,格式为:<目标备注> <目标IP地址> <目标地址密码> <目标地址端口>
+  2.执行脚本(. distribute_key/distribute_key.sh)
+  3.测试(ssh -p<目标地址端口> <目标IP地址>)
+该脚本可实现密钥分发和添加主机清单，但不推荐使用，没有经过过多测试，可尝试key模块list模块分别测试。
+主机清单只能添加在最后一行，若有组的需求，可配置/etc/ansible/hosts文件(脚本自带创建test组)
+
+#/rsync/register/scripts/distribute_key/ip_port_pass.txt
+格式如下(中间用空格分隔,可参考ip_port_pass.txt文件) ：
+<目标备注> <目标IP地址> <目标地址端口> <目标地址密码>
