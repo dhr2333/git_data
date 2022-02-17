@@ -1,0 +1,143 @@
+---
+# tasks file for /usr/local/wlhiot/yaml/ansible/roles/k8s_node
+- name: change hostname
+  hostname: 
+    name: "{{ hostname }}"
+
+- name: Add hosts
+  copy:
+    src: hosts
+    dest: /etc/hosts
+    mode: 0644
+
+### yum tools ###
+- name: Update yum repo
+  copy:
+    src: "{{ item }}"
+    dest: /etc/yum.repos.d/
+  with_items:
+  - CentOS-Base.repo
+  - docker-ce.repo
+  notify:
+  - yum clean metadata
+  - yum makecache
+
+- name: Force all notified handlers to run at this point
+  meta: flush_handlers
+
+- name: Basic tools install
+  yum:
+    name: [net-tools,
+           iptstate,
+           lrzsz,
+           wget,
+           curl,
+           telnet,
+           vim,
+           iptables-services,
+           yum-utils,
+           bash-completion,
+           ntp,
+           rsync]
+    state: present
+
+### selinux ###
+- name:  Ensure SELinux is set to disabled mode
+  lineinfile:
+    dest: /etc/selinux/config
+    regexp: '^SELINUX='
+    line: SELINUX=disabled
+
+- name: Disable SELinux
+  selinux:
+    state: disabled
+
+### ssh init ###
+- name: Open ssh PubkeyAuthentication
+  lineinfile:
+   dest: /etc/ssh/sshd_config
+   regexp: '#PubkeyAuthentication yes'
+   backrefs: yes
+   line: 'PubkeyAuthentication yes'
+
+- name: Open ssh AuthorizedKeysFile
+  lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: '#AuthorizedKeysFile'
+    backrefs: yes
+    line: 'AuthorizedKeysFile'
+
+- name: Close ssh PasswordAuthentication
+  lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: '^PasswordAuthentication no'
+    backrefs: yes
+    line: 'PasswordAuthentication yes'
+
+- name: Echo /etc/ssh/sshd_config | shell module
+  command: egrep "Port|AuthorizedKeysFile|PubkeyAuthentication|PasswordAuthentication" /etc/ssh/sshd_config
+  register: config
+
+- name: debug
+  debug: msg={{ config.stdout_lines }}
+  ignore_errors: True
+
+- name: Create /root/.ssh directory
+  file:
+    path: /root/.ssh
+    owner: root
+    group: root
+    mode: 0755
+    state: directory
+
+- name: Restart sshd
+  service:
+    name: sshd
+    state: restarted
+    enabled: True
+
+### Firewalld disable ###
+- name:  Disable firewalld
+  service:
+    name: firewalld
+    state: stopped
+    enabled: False
+
+- name: Disable iptables
+  service:
+    name: iptables
+    state: stopped
+    enabled: False
+
+### Create of cron ###
+- name:  Creates cron file under /etc/cron.d
+  cron:
+    name: remove dangling mirror
+    weekday: "1"
+    hour: "5"
+    minute: "0"
+    job: "docker images | grep none | awk '{print $3}' | xargs docker rmi"
+
+### docker ###
+- name: docker install
+  yum:
+    name: [yum-utils,
+           device-mapper-persistent-data,
+           lvm2,
+           docker-ce]
+    state: present
+
+- name: docker service
+  service:
+    name: docker
+    state: started
+    enabled: True
+
+- name: login in harbor | shell module
+  command: docker login -u admin -p Harbor12345 harbor.wlhiot.com:8080
+  register: login
+
+- name: debug
+  debug: msg={{ login.stdout_lines }}
+  ignore_errors: True
+

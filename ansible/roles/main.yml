@@ -1,0 +1,7 @@
+---
+# tasks file for /usr/local/wlhiot/yaml/ansible/roles/k8s_node
+- name: initialization node
+  hosts: test
+  remote_user: root
+  roles: 
+    - k8s_node

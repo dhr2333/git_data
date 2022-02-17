@@ -1,0 +1,193 @@
+#本脚本用来进行Centos7系统初始化，请谨慎使用
+
+########Yum Tools########
+- name: Update yum repo
+  copy: src={{ item  }} dest=/etc/yum.repos.d/
+  with_fileglob:
+  - yum/CentOS-Base.repo
+  - yum/docker-ce.repo
+
+- name: Basic lib install
+  yum: name={{ item }} state=latest update_cache=yes
+  with_items:
+  - epel-release
+  - libselinux-python
+  - glibc
+  - gcc
+  - make
+  - cmake
+  - zlib
+  - python-pip
+
+- name: Basic tools install
+  yum: name={{ item }} state=latest update_cache=yes
+  with_items:
+  - zip
+  - net-tools
+  - lrzsz
+  - htop
+  - axel
+  - wget
+  - curl
+  - telnet
+  - iotop
+  - vim
+  - dmidecode
+  - sysstat
+  - ntp
+  - net-snmp
+  - rsync
+
+########Selinux Firewalld Disable########
+- name: Selinux dsiable
+  lineinfile:
+    dest: /etc/selinux/config
+    regexp: '^SELINUX='
+    line: 'SELINUX=disabled'
+
+- name: Selinux stop
+  selinux: state=disabled
+
+- name: Firewalld disable
+  service: name=firewalld state=stopped enabled=no
+
+########Ulimit Init########
+- name: Ulimit change
+  shell: ulimit -SHn 102400
+
+- name: Ulimit change rc.local
+  lineinfile:
+    dest: /etc/rc.local
+    regexp: 'ulimit -SHn 102400'
+    backrefs: no
+    line: 'ulimit -SHn 102400'
+
+- name: Change limits.conf soft
+  lineinfile:
+    dest: /etc/security/limits.conf
+    regexp: '\* soft nofile [0-9]+'
+    backrefs: no
+    line: '* soft nofile 102400'
+
+- name: Change limits.conf hard
+  lineinfile:
+    dest: /etc/security/limits.conf
+    regexp: '\* hard nofile [0-9]+'
+    backrefs: no
+    line: '* hard nofile 102400'
+
+- name: Change system.conf DefaultLimitCORE
+  lineinfile:
+    dest: /etc/systemd/system.conf
+    regexp: 'DefaultLimitCORE'
+    backrefs: no
+    line: 'DefaultLimitCORE=infinity'
+
+- name: Change system.conf DefaultLimitNOFILE
+  lineinfile:
+    dest: /etc/systemd/system.conf
+    regexp: 'DefaultLimitNOFILE'
+    backrefs: no
+    line: 'DefaultLimitNOFILE=100000'
+
+- name: Change system.conf 
+  lineinfile:
+    dest: /etc/systemd/system.conf
+    regexp: 'DefaultLimitNPROC'
+    backrefs: no
+    line: 'DefaultLimitNPROC=100000'
+
+########Change Hostname########
+- hostname : name={{ hostname }}
+
+- name: Add hosts
+  lineinfile:
+    dest: /etc/hosts
+    line: '{{ ansible_eth0.ipv4.address }}  {{ hostname }}'
+
+########Disk Init########
+#- name: New Disk Partition
+#  script: scripts/disk.sh "{{ disk }}" #执行 disk.sh 参数{{ disk }} 对应xfs.yml的disk:  /dev/vdb #磁盘名字
+#  become: yes
+#  become_method: sudo
+
+#- name: New Disk Format(xfs)
+#  filesystem: fstype=xfs dev="{{ partition }}" opts="-fn ftype=1" #格式化磁盘分区
+#  become: yes
+#  become_method: sudo
+
+#- name: New Disk Mount
+#  mount: name="{{ mountDir }}" src="{{ partition }}" fstype=xfs state=mounted #挂在目录
+#  become: yes
+#  become_method: sudo
+
+########Create Directory########
+- name: Create Directory
+  file: path={{ item }} state=directory
+  with_items:
+    - /opt/hxapps
+    - /opt/hxwww
+    - /opt/hxlog/
+    - /opt/hxscripts
+    - /opt/hxupload
+    - /opt/hxbackup
+
+########Docker install########
+- name: Install docker
+  yum: name=docker-ce state=present
+  async: 0
+  poll: 10
+
+- name: config docker Storage type and location
+  lineinfile:
+    dest: /usr/lib/systemd/system/docker.service
+    regexp: '^ExecStart='
+    line: 'ExecStart=/usr/bin/dockerd --graph=/opt/docker'
+
+- service: name=docker enabled=yes state=started
+
+- name: Install docker-compose
+  shell: pip install docker-compose
+  async: 0
+  poll: 10
+
+########Ssh Init#######
+- name: Open ssh PubkeyAuthentication
+  lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: '#PubkeyAuthentication yes'
+    backrefs: yes
+    line: 'PubkeyAuthentication yes'
+
+- name: Open ssh AuthorizedKeysFile
+  lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: '#AuthorizedKeysFile'
+    backrefs: yes
+    line: 'AuthorizedKeysFile'
+
+- name: Close ssh PasswordAuthentication
+  lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: '^PasswordAuthentication yes'
+    backrefs: yes
+    line: 'PasswordAuthentication no'
+
+- name: Change ssh port
+  lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: '#Port 22'
+    backrefs: yes
+    line: 'Port 8022'
+
+- name: Echo /etc/ssh/sshd_config
+  shell: egrep "Port|AuthorizedKeysFile|PubkeyAuthentication|PasswordAuthentication" /etc/ssh/sshd_config
+
+- name: Create .ssh
+  file: path=/root/.ssh owner=root group=root mode=700 state=directory
+
+- name: Add keys
+  copy: src=public_key/authorized_keys dest=/root/.ssh/authorized_keys owner=root group=root mode=600
+
+- name: Restart sshd
+  service: name=sshd state=restarted enabled=yes

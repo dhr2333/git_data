@@ -1,0 +1,25 @@
+---
+- hosts: k8s_node
+  vars:
+    remote_user: root
+  tasks:
+  - name: Installing basic Software
+    yum: 
+      name: net-tools,iptstate,wget,telnet,iptables-services,yum-utils
+      state: installed
+  - name: Ensure selinux service shutdown
+    command: /sbin/setenforce 0
+    ignore_errors: yes
+  - name: Disabling the Mail Service
+    service: name=postfix state=stopped
+  - name: Changing host names
+    raw: "echo {{hostname|quote}} > /etc/hostname"
+  - name:
+    shell: hostnamectl set-hostname {{hostname|quote}}
+  - name: 安装必要的一些系统工具(docker)
+    yum:
+      name: yum-utils,device-mapper-persistent-data,lvm2
+      state: installed
+  - name: 添加软件源信息
+    get_url: url=http://mirrors.aliyun.com/repo/epel-7.repo
+    dest: /etc/yum.repos.d/epel.repo 

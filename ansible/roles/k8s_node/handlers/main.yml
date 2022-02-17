@@ -1,0 +1,8 @@
+---
+# handlers file for /usr/local/wlhiot/yaml/ansible/roles/k8s_node
+- name: yum clean metadata
+  command: yum clean metadata
+
+- name: yum makecache
+  command: yum makecache
+
