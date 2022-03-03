@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfspv10
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: eboxtest
+  nfs:
+    path: /usr/local/wlhiot/mount/nfsdata/nfspv10
+    server: 192.168.254.29
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: eboxtest-pvc
+  namespace: test
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: eboxtest
